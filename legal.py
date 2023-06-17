@@ -11,12 +11,12 @@ from langchain.agents import initialize_agent
 def Legal_Researcher(input_variable,language):
   input_variable = input_variable+" . " +language
   # create a new openai api key
-  os.environ["OPENAI_API_KEY"] = "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"
+  os.environ["OPENAI_API_KEY"] = "...."
   # set up openai api key
   openai_api_key = os.environ.get('OPENAI_API_KEY')
 
   # Load in some tools to use
-  os.environ["SERPAPI_API_KEY"] = "581b459d9d1c771f55fd6468ff513ad89f127a48e80983c897bfb33d708d37fc"
+  os.environ["SERPAPI_API_KEY"] = "...."
 
   # set up openai api key
   openai_api_key = os.environ.get('SERPAPI_API_KEY')
