@@ -1,0 +1,106 @@
+body {
+  background: linear-gradient( #3b8de4, #34acde);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+#chat-log {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: rgba(91, 92, 92, 0.5);
+  max-width: 90%; /* Updated max-width value */
+  width: 800px; /* Added width property */
+  height: 400px;
+  overflow-y: auto;
+  background-image: url('/static/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.user-message {
+  background-color: #34acde;
+  color: rgb(0, 6, 122);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  max-width: 80%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.bot-message {
+  background-color: #5b5c5c;
+  color: rgb(62, 62, 62);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  max-width: 80%;
+  font-weight: bold; /* تغيير وزن الخط إلى bold */
+  font-style: italic; /* تغيير شكل الخط إلى مائل (italic) */
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+
+
+
+#user-input {
+  width: 53%;
+  height: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f2f2f264;
+  resize: none; /* Prevent resizing of the input box */
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+
+#user-input:focus {
+  outline: none;
+  background-color: #e6e6e6;
+}
+
+#language-select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #063e55;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #48d0d8;
+}
+
+.placeholder {
+  color: #bbb;
+  font-style: italic;
+}
